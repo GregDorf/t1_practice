@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "t1-practice"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/t1_practice
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    properties:
+      hibernate:
+        bytecode:
+          provider:
+            format_sql: true
+  flyway:
+    enabled: false
+    locations: classpath:db/migration
+    baseline-on-migrate: true
