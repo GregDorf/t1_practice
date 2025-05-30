@@ -10,7 +10,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="accounts")
+@Table(name = "accounts")
 public class Account extends AbstractPersistable<Long> {
 
     @ManyToOne

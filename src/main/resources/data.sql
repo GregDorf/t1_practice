@@ -1,3 +1,5 @@
+delete from clients;
+
 insert into clients (id, first_name, last_name, middle_name, client_id) values (1, 'Sky', 'Dayly', 'Scapens', '86afa4a6-cb65-55fb-8837-5cbb65a50590');
 insert into clients (id, first_name, last_name, middle_name, client_id) values (2, 'Rachele', 'Dunnion', 'Trude', 'ebebccef-8f1e-fbe5-1bd2-0cf891fdfff6');
 insert into clients (id, first_name, last_name, middle_name, client_id) values (3, 'Alair', 'Millmoe', 'Larrie', '32cafb6d-5a8d-e40a-a2dd-b44ad4fb276f');
@@ -19,6 +21,8 @@ insert into clients (id, first_name, last_name, middle_name, client_id) values (
 insert into clients (id, first_name, last_name, middle_name, client_id) values (19, 'Taylor', 'Fransson', 'Haggarth', '83c2947c-ec81-7e66-807c-cb2ffc7faa8d');
 insert into clients (id, first_name, last_name, middle_name, client_id) values (20, 'Lea', 'Bertolin', 'MacMillan', 'e2cd06d0-17cf-edfc-55f1-a2ee44a12cfd');
 
+delete from accounts;
+
 insert into accounts (id, client_id, account, balance) values (1, 1, 'CREDIT', 9855.74);
 insert into accounts (id, client_id, account, balance) values (2, 2, 'DEBIT', 784.87);
 insert into accounts (id, client_id, account, balance) values (3, 3, 'CREDIT', 2930.56);
@@ -39,6 +43,8 @@ insert into accounts (id, client_id, account, balance) values (17, 17, 'CREDIT',
 insert into accounts (id, client_id, account, balance) values (18, 18, 'CREDIT', 1790.55);
 insert into accounts (id, client_id, account, balance) values (19, 19, 'CREDIT', 4235.65);
 insert into accounts (id, client_id, account, balance) values (20, 20, 'CREDIT', 9778.48);
+
+delete from transactions;
 
 insert into transactions (id, account_id, amount, created_at) values (1, 1, 2178, '2024-12-09T00:00:00');
 insert into transactions (id, account_id, amount, created_at) values (2, 2, 5009, '2025-01-31T00:00:00');

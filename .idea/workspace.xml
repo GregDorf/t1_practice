@@ -4,12 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="done">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="added @Metric and @Cached aspects">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/CachedAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/Cached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/MetricTrack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/TimeLimitExceedLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/TimeLimitExceedLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +32,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,18 +46,29 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GregDorf"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GregDorf&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/GregDorf/t1_practice.git",
-    "accountId": "7be8d86a-ebae-404d-a712-e90b68eeec5e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GregDorf/t1_practice.git&quot;,
+    &quot;accountId&quot;: &quot;7be8d86a-ebae-404d-a712-e90b68eeec5e&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;GregDorf&quot;,
+    &quot;repository&quot;: &quot;t1_practice&quot;
   }
-}]]></component>
+}</component>
+  <component name="GradleModuleStateConfig" initialized="true" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -76,7 +99,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.T1PracticeApplication.executor": "Run",
-    "git-widget-placeholder": "test-data-branch",
+    "git-widget-placeholder": "practice__1-27.05.2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,7 +108,14 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -117,7 +147,14 @@
       <workItem from="1748243852481" duration="1996000" />
       <workItem from="1748250951323" duration="17774000" />
       <workItem from="1748269617666" duration="35000" />
-      <workItem from="1748270296519" duration="11893000" />
+      <workItem from="1748270296519" duration="13847000" />
+      <workItem from="1748412150686" duration="1285000" />
+      <workItem from="1748475323635" duration="369000" />
+      <workItem from="1748475705951" duration="1983000" />
+      <workItem from="1748517501451" duration="1935000" />
+      <workItem from="1748598564909" duration="6929000" />
+      <workItem from="1748622812695" duration="86000" />
+      <workItem from="1748622947513" duration="7155000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
@@ -135,7 +172,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748278854059</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added-test-data">
+      <option name="closed" value="true" />
+      <created>1748282357536</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748282357536</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added table data_source_error_log in schema.sql">
+      <option name="closed" value="true" />
+      <created>1748623695453</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748623695453</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +219,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="added-test-data" />
+    <MESSAGE value="added table data_source_error_log in schema.sql" />
+    <MESSAGE value="added @Metric and @Cached aspects" />
+    <option name="LAST_COMMIT_MESSAGE" value="added @Metric and @Cached aspects" />
   </component>
 </project>
