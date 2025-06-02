@@ -1,5 +1,6 @@
 package com.testprojgroup.t1_practice.aop;
 
+import com.testprojgroup.t1_practice.kafka.MetricKafkaProducer;
 import com.testprojgroup.t1_practice.model.TimeLimitExceedLog;
 import com.testprojgroup.t1_practice.repository.TimeLimitExceedLogRepository;
 import lombok.RequiredArgsConstructor;
@@ -15,8 +16,9 @@ import java.time.LocalDateTime;
 @Component
 @RequiredArgsConstructor
 public class MetricAspect {
-    private final  TimeLimitExceedLogRepository timeLimitExceedLogRepository;
+    private final TimeLimitExceedLogRepository timeLimitExceedLogRepository;
     private final MetricProperties metricProperties;
+    private final MetricKafkaProducer metricKafkaProducer;
 
     @Around("@annotation(com.testprojgroup.t1_practice.aop.annotation.MetricTrack)")
     public Object executionTime(ProceedingJoinPoint joinPoint) throws Throwable {
@@ -24,15 +26,22 @@ public class MetricAspect {
         Object result = joinPoint.proceed();
         long duration = System.currentTimeMillis() - startTime;
 
-        if (duration > metricProperties.getTimeLimitMs()) {
-            Signature signature = joinPoint.getSignature();
-            TimeLimitExceedLog timeLimitExceedLog = new TimeLimitExceedLog();
-            timeLimitExceedLog.setClassName(signature.getDeclaringTypeName());
-            timeLimitExceedLog.setMethodName(signature.getName());
-            timeLimitExceedLog.setExecutionTime(duration);
-            timeLimitExceedLog.setTimestamp(LocalDateTime.now());
+        Signature signature = joinPoint.getSignature();
+        String className = signature.getDeclaringTypeName();
+        String methodName = signature.getName();
 
-            timeLimitExceedLogRepository.save(timeLimitExceedLog);
+        if (duration > metricProperties.getTimeLimitMs()) {
+            try {
+                metricKafkaProducer.sendMetric(className, methodName, duration, metricProperties.getTimeLimitMs());
+            } catch (Exception ex) {
+                TimeLimitExceedLog timeLimitExceedLog = new TimeLimitExceedLog();
+                timeLimitExceedLog.setClassName(className);
+                timeLimitExceedLog.setMethodName(methodName);
+                timeLimitExceedLog.setExecutionTime(duration);
+                timeLimitExceedLog.setTimestamp(LocalDateTime.now());
+
+                timeLimitExceedLogRepository.save(timeLimitExceedLog);
+            }
         }
 
         return result;

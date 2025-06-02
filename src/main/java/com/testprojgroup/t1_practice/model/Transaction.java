@@ -17,13 +17,13 @@ import java.time.LocalDateTime;
 public class Transaction extends AbstractPersistable<Long> {
 
     @ManyToOne
-    @JoinColumn(name="account_id")
+    @JoinColumn(name="account_id", nullable=false)
     private Account account;
 
-    @Column(name="amount")
+    @Column(name="amount", nullable=false)
     private BigDecimal amount;
 
-    @Column(name="created_at")
+    @Column(name="created_at", nullable=false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
 }

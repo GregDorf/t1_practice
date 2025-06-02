@@ -14,13 +14,13 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 public class Account extends AbstractPersistable<Long> {
 
     @ManyToOne
-    @JoinColumn(name="client_id")
+    @JoinColumn(name="client_id", nullable=false)
     private Client client;
 
-    @Column(name="account")
+    @Column(name="account", nullable=false)
     @Enumerated(EnumType.STRING)
     private AccountTypeEnum account;
 
-    @Column(name="balance")
+    @Column(name="balance", nullable=false)
     private double balance;
 }

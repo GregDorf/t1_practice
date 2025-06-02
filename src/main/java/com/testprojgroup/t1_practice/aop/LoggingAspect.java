@@ -1,5 +1,6 @@
 package com.testprojgroup.t1_practice.aop;
 
+import com.testprojgroup.t1_practice.kafka.DataSourceErrorKafkaProducer;
 import com.testprojgroup.t1_practice.model.DataSourceErrorLog;
 import com.testprojgroup.t1_practice.repository.DataSourceErrorLogRepository;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +16,7 @@ import java.util.Arrays;
 @RequiredArgsConstructor
 public class LoggingAspect {
     private final DataSourceErrorLogRepository dataSourceErrorLogRepository;
+    private final DataSourceErrorKafkaProducer dataSourceErrorKafkaProducer;
 
     @AfterThrowing(pointcut="@annotation(com.testprojgroup.t1_practice.aop.annotation.LogDataSourceError)", throwing="ex")
     public void logAfterThrowing(JoinPoint joinPoint, Throwable ex) {
@@ -22,7 +24,11 @@ public class LoggingAspect {
         String message = ex.getMessage();
         String methodSignature = joinPoint.getSignature().toLongString();
 
-        DataSourceErrorLog dataSourceErrorLog = new DataSourceErrorLog(stackTrace, methodSignature, message);
-        dataSourceErrorLogRepository.save(dataSourceErrorLog);
+        try {
+            dataSourceErrorKafkaProducer.sendDataSourceError(methodSignature, message);
+        } catch (Exception e) {
+            DataSourceErrorLog dataSourceErrorLog = new DataSourceErrorLog(stackTrace, methodSignature, message);
+            dataSourceErrorLogRepository.save(dataSourceErrorLog);
+        }
     }
 }
