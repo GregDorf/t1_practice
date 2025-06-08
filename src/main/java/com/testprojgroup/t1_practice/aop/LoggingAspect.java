@@ -1,6 +1,6 @@
 package com.testprojgroup.t1_practice.aop;
 
-import com.testprojgroup.t1_practice.kafka.DataSourceErrorKafkaProducer;
+import com.testprojgroup.t1_practice.kafka.metric_producers.DataSourceErrorKafkaProducer;
 import com.testprojgroup.t1_practice.model.DataSourceErrorLog;
 import com.testprojgroup.t1_practice.repository.DataSourceErrorLogRepository;
 import lombok.RequiredArgsConstructor;
