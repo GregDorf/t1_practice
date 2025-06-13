@@ -1,4 +1,4 @@
-package com.testprojgroup.t1_practice.kafka;
+package com.testprojgroup.t1_practice.kafka.transaction_request;
 
 import com.testprojgroup.t1_practice.kafka.messages.TransactionAcceptMessage;
 import lombok.RequiredArgsConstructor;

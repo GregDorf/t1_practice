@@ -4,7 +4,9 @@ import com.testprojgroup.t1_practice.aop.annotation.Cached;
 import com.testprojgroup.t1_practice.aop.annotation.LogDataSourceError;
 import com.testprojgroup.t1_practice.aop.annotation.MetricTrack;
 import com.testprojgroup.t1_practice.model.Account;
+import com.testprojgroup.t1_practice.model.AccountStatusEnum;
 import com.testprojgroup.t1_practice.repository.AccountRepository;
+import com.testprojgroup.t1_practice.repository.ClientRepository;
 import com.testprojgroup.t1_practice.service.AccountService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
@@ -20,6 +22,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class AccountServiceImpl implements AccountService {
     private final AccountRepository accountRepository;
+    private final ClientRepository clientRepository;
 
     @MetricTrack
     @Cached(cacheName="Accounts_List")
@@ -55,6 +58,24 @@ public class AccountServiceImpl implements AccountService {
 
     public void adjustBalance(Account account, BigDecimal delta) {
         account.setBalance(account.getBalance() + delta.doubleValue());
+        accountRepository.save(account);
+    }
+
+    public void blockAccountAndClient(UUID accountId, UUID clientId) {
+        Account account = accountRepository.findByAccountId(accountId).orElseThrow();
+        //Client client = clientRepository.findByClientId(clientId).orElseThrow();
+
+        account.setStatus(AccountStatusEnum.BLOCKED);
+
+        accountRepository.save(account);
+        //clientRepository.save(client);
+    }
+
+    public void updateAccountStatus(UUID accountId, AccountStatusEnum newStatus) {
+        Account account = accountRepository.findByAccountId(accountId)
+                .orElseThrow(() -> new RuntimeException("Account not found"));
+
+        account.setStatus(newStatus);
         accountRepository.save(account);
     }
 }

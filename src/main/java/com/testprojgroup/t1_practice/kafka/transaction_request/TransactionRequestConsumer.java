@@ -1,4 +1,4 @@
-package com.testprojgroup.t1_practice.kafka;
+package com.testprojgroup.t1_practice.kafka.transaction_request;
 
 import com.testprojgroup.t1_practice.kafka.messages.TransactionRequestMessage;
 import com.testprojgroup.t1_practice.service.TransactionProcessingService;

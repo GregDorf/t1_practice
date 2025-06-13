@@ -1,4 +1,4 @@
-package com.testprojgroup.transactionmonitor.model;
+package com.testprojgroup.transactionmonitor.kafka.messages;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

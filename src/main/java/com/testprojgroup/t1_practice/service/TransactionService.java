@@ -5,6 +5,7 @@ import com.testprojgroup.t1_practice.model.Transaction;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 
 public interface TransactionService {
     Transaction getTransaction(Long id);
@@ -14,4 +15,8 @@ public interface TransactionService {
     List<Transaction> getAllTransactions();
 
     Transaction createTransaction(Account account, BigDecimal amount);
+
+    public Transaction createRejectedTransaction(UUID accountId, BigDecimal amount);
+
+    int countRejectedTransactionsByAccountId(Long accountId);
 }
