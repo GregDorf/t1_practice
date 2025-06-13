@@ -26,3 +26,11 @@ CREATE TABLE IF NOT EXISTS data_source_error_log (
     message TEXT NOT NULL,
     method_signature TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS time_limit_exceed_log (
+    id BIGINT PRIMARY KEY,
+    class_name VARCHAR(255),
+    method_name VARCHAR(255),
+    execution_time BIGINT,
+    created_at TIMESTAMP
+);
