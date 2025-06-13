@@ -1,23 +1,19 @@
 package com.testprojgroup.t1_practice.service.impl_transaction_processing_service;
 
 
-import com.testprojgroup.t1_practice.config.TransactionConfig;
-import com.testprojgroup.t1_practice.kafka.transactions_request.TransactionAcceptProducer;
+import com.testprojgroup.t1_practice.kafka.TransactionAcceptProducer;
 import com.testprojgroup.t1_practice.kafka.messages.TransactionAcceptMessage;
 import com.testprojgroup.t1_practice.kafka.messages.TransactionRequestMessage;
 import com.testprojgroup.t1_practice.model.Account;
 import com.testprojgroup.t1_practice.model.AccountStatusEnum;
-import com.testprojgroup.t1_practice.model.ClientStatusResponse;
 import com.testprojgroup.t1_practice.model.Transaction;
 import com.testprojgroup.t1_practice.service.AccountService;
-import com.testprojgroup.t1_practice.service.ClientStatusService;
 import com.testprojgroup.t1_practice.service.TransactionProcessingService;
 import com.testprojgroup.t1_practice.service.TransactionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
-import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
@@ -25,19 +21,13 @@ public class TransactionProcessingServiceImpl implements TransactionProcessingSe
 
     private final AccountService accountService;
     private final TransactionService transactionService;
-    private final TransactionAcceptProducer transactionProducer;
-    private final ClientStatusService clientStatusService;
+    private final TransactionAcceptProducer producer;
 
     public void processTransaction(TransactionRequestMessage msg) {
         Account account = accountService.findByAccountId(msg.getAccountId());
 
-        if (account == null || account.getStatus() == null) {
-            ClientStatusResponse response = clientStatusService.fetchStatusFromService2(msg.getClientId(), msg.getAccountId());
-
-            if ("BLACKLISTED".equals(response.getStatus())) {
-
-                return;
-            }
+        if (account.getStatus() != AccountStatusEnum.OPEN) {
+            return;
         }
 
         Transaction tx = transactionService.createTransaction(account, msg.getAmount());
@@ -52,6 +42,6 @@ public class TransactionProcessingServiceImpl implements TransactionProcessingSe
                 account.getBalance()
         );
 
-        transactionProducer.sendAcceptMessage(acceptMessage);
+        producer.sendAcceptMessage(acceptMessage);
     }
 }

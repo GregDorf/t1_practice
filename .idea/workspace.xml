@@ -5,119 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction">
-      <change afterPath="$PROJECT_DIR$/.idea/amplicode-jpa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/amplicode-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/diff-generator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/TransactionResultConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/messages/TransactionAcceptMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/messages/TransactionRequestMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/transactions_request/TransactionRequestConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/transactions_request/TransactionRequestProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/AccountStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/TransactionStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionProcessingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionResultProcessingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_result_processing_service/TransactionResultProcessingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/t1_practice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/T1PracticeApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache$CacheEntry$CacheEntryBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache$CacheEntry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/CachedAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/LoggingAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricProperties$MetricPropertiesBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/Cached.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/LogDataSourceError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/MetricTrack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/controller/AccountController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/controller/TransactionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Account$AccountBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/AccountStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/AccountTypeEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Client$ClientBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/DataSourceErrorLog$DataSourceErrorLogBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/DataSourceErrorLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/TimeLimitExceedLog$TimeLimitExceedLogBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/TimeLimitExceedLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Transaction$TransactionBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Transaction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/TransactionStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/AccountRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/DataSourceErrorLogRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/TimeLimitExceedLogRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/TransactionRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/AccountService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/TransactionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/testprojgroup/t1_practice/T1PracticeApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/TransactionMonitorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/config/MonitorProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/kafka/TransactionAcceptListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/kafka/TransactionKafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/model/TransactionAcceptMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/model/TransactionResultMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/service/MonitorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-monitor/src/test/java/com/testprojgroup/transactionmonitor/TransactionMonitorApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/TransactionAcceptProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/TransactionRequestConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/DataSourceErrorKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/DataSourceErrorKafkaProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/MetricKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/MetricKafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/TransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_result_processing_service/TransactionResultProcessingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_result_processing_service/TransactionResultProcessingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/T1PracticeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/T1PracticeApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricProperties$MetricPropertiesBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +44,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/transaction-monitor">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -189,10 +104,14 @@
   <component name="GradleModuleStateConfig" initialized="true">
     <option name="configPaths">
       <map>
-        <entry key="$PROJECT_DIR$/transaction-monitor" value="C:\Users\ZERRASH\IdeaProjects\t1_practice\transaction-monitor\build.gradle" />
+        <entry key="$PROJECT_DIR$/transaction-monitor" value="C:\Users\ZERRASH\Desktop\t1_practice\transaction-monitor\build.gradle" />
       </map>
     </option>
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -214,6 +133,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build transaction-monitor.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
     "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
@@ -225,7 +145,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.T1PracticeApplication.executor": "Run",
     "Spring Boot.TransactionMonitorApplication.executor": "Run",
-    "git-widget-placeholder": "#4 on practice__3-02.06.2025",
+    "git-widget-placeholder": "#5 on practice__4-07.06.2025",
+    "last_opened_file_path": "C:/Users/ZERRASH/Desktop/t1_practice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -296,6 +217,7 @@
       <workItem from="1748849391812" duration="20146000" />
       <workItem from="1749204031555" duration="1809000" />
       <workItem from="1749220478905" duration="42724000" />
+      <workItem from="1749810885773" duration="2127000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />

@@ -1,4 +1,4 @@
-package com.testprojgroup.t1_practice.kafka;
+package com.testprojgroup.t1_practice.kafka.metric_producers;
 
 import lombok.AllArgsConstructor;
 import org.apache.kafka.clients.producer.ProducerRecord;
