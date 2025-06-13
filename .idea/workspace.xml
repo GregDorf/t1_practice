@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/TransactionAcceptProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/TransactionRequestConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/DataSourceErrorKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/DataSourceErrorKafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/MetricKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/MetricKafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionProcessingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_result_processing_service/TransactionResultProcessingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_result_processing_service/TransactionResultProcessingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/T1PracticeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/T1PracticeApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricProperties$MetricPropertiesBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/TransactionMonitorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/TransactionMonitorApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +199,7 @@
       <workItem from="1748849391812" duration="20146000" />
       <workItem from="1749204031555" duration="1809000" />
       <workItem from="1749220478905" duration="42724000" />
-      <workItem from="1749810885773" duration="2127000" />
+      <workItem from="1749810885773" duration="2515000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
@@ -267,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748877852901</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction">
+      <option name="closed" value="true" />
+      <created>1749813128422</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749813128422</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
