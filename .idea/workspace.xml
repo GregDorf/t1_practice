@@ -5,8 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 09/06/2025">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/config/MonitorProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/config/MonitorProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/amplicode-jpa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/amplicode-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/annotations/Cached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/annotations/LogDataSourceError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/annotations/MetricTrack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/aspects/CachedAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/aspects/DataSourceErrorLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/aspects/ExecutionTimeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/cache/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/config/LoggingStarterAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/config/LoggingStarterProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/kafka/DataSourceErrorKafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/kafka/KafkaProduceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/kafka/MetricKafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/model/DataSourceErrorLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/model/TimeLimitExceedLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/repository/DataSourceErrorLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/repository/TimeLimitExceedLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/resources/META-INF/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/Cache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/CachedAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/LoggingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/Cached.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/LogDataSourceError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/MetricTrack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/DataSourceErrorKafkaProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/MetricKafkaProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/DataSourceErrorLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/TimeLimitExceedLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/DataSourceErrorLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/TimeLimitExceedLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/T1PracticeApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache$CacheEntry$CacheEntryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache$CacheEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/CachedAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/LoggingAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/Cached.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/LogDataSourceError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/MetricTrack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/DataSourceErrorLog$DataSourceErrorLogBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/DataSourceErrorLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/TimeLimitExceedLog$TimeLimitExceedLogBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/TimeLimitExceedLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/DataSourceErrorLogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/TimeLimitExceedLogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +115,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="practice_4-09.06.2025" />
+        <entry key="$PROJECT_DIR$" value="practice_5-09.06.2025" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,52 +171,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build transaction-monitor.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.T1PracticeApplication.executor": "Run",
-    "Spring Boot.TransactionMonitorApplication (1).executor": "Coverage",
-    "Spring Boot.TransactionMonitorApplication.executor": "Run",
-    "git-widget-placeholder": "practice__5-09.06.2025",
-    "last_opened_file_path": "C:/Users/ZERRASH/Desktop/t1_practice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build transaction-monitor.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;Database connection parameters found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.T1PracticeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TransactionMonitorApplication (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Spring Boot.TransactionMonitorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;practice__6-11.06.2025&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZERRASH/Desktop/t1_practice/logging-starter/src/main/java/com/testprojgroup/logging/cache&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\cache" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\repository" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\model" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\kafka" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\config" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\aspects" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.testprojgroup.transactionmonitor" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.T1PracticeApplication">
     <configuration name="T1PracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="t1_practice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.testprojgroup.t1_practice.T1PracticeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionMonitorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="transaction-monitor.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.testprojgroup.transactionmonitor.TransactionMonitorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,6 +271,9 @@
       <workItem from="1749220478905" duration="42724000" />
       <workItem from="1749810885773" duration="5517000" />
       <workItem from="1749816424565" duration="2383000" />
+      <workItem from="1749985356646" duration="1362000" />
+      <workItem from="1750017659444" duration="8332000" />
+      <workItem from="1750077444552" duration="851000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
