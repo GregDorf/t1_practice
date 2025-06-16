@@ -4,73 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 09/06/2025">
-      <change afterPath="$PROJECT_DIR$/logging-starter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/amplicode-jpa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/amplicode-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/annotations/Cached.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/annotations/LogDataSourceError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/annotations/MetricTrack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/aspects/CachedAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/aspects/DataSourceErrorLogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/aspects/ExecutionTimeAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/cache/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/config/LoggingStarterAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/config/LoggingStarterProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/kafka/DataSourceErrorKafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/kafka/KafkaProduceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/kafka/MetricKafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/model/DataSourceErrorLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/model/TimeLimitExceedLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/repository/DataSourceErrorLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/java/com/testprojgroup/logging/repository/TimeLimitExceedLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging-starter/src/main/resources/META-INF/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/Cache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/CachedAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/LoggingAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/MetricAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/Cached.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/LogDataSourceError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/aop/annotation/MetricTrack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/DataSourceErrorKafkaProducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/kafka/metric_producers/MetricKafkaProducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/DataSourceErrorLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/TimeLimitExceedLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/DataSourceErrorLogRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/TimeLimitExceedLogRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/T1PracticeApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache$CacheEntry$CacheEntryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache$CacheEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/Cache.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/CachedAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/LoggingAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/MetricAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/Cached.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/LogDataSourceError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/aop/annotation/MetricTrack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/DataSourceErrorLog$DataSourceErrorLogBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/DataSourceErrorLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/TimeLimitExceedLog$TimeLimitExceedLogBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/TimeLimitExceedLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/DataSourceErrorLogRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/TimeLimitExceedLogRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.class" beforeDir="false" />
-    </list>
+    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 11/06/2025" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,7 +207,7 @@
       <workItem from="1749816424565" duration="2383000" />
       <workItem from="1749985356646" duration="1362000" />
       <workItem from="1750017659444" duration="8332000" />
-      <workItem from="1750077444552" duration="851000" />
+      <workItem from="1750077444552" duration="1512000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
@@ -347,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749818696502</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="completed task for 11/06/2025">
+      <option name="closed" value="true" />
+      <created>1750079682679</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750079682679</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +326,8 @@
     <MESSAGE value="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction" />
     <MESSAGE value="the project structure has been corrected and missing files from the previous commit have been added" />
     <MESSAGE value="completed task for 09/06/2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed task for 09/06/2025" />
+    <MESSAGE value="completed task for 11/06/2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed task for 11/06/2025" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/t1_practice$TransactionMonitorApplication__1_.ic" NAME="TransactionMonitorApplication (1) Coverage Results" MODIFIED="1749817226214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
