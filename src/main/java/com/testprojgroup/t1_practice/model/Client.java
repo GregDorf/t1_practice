@@ -22,6 +22,10 @@ public class Client extends AbstractPersistable<Long> {
     @Column(name="middle_name")
     private String thirdName;
 
-    @Column(name="client_id", nullable=false)
+    @Column(name="client_id", nullable=false, unique=true)
     private UUID clientId;
+
+    @Column(name="status")
+    @Enumerated(EnumType.STRING)
+    private ClientStatusEnum status = ClientStatusEnum.UNBLOCKED;
 }
