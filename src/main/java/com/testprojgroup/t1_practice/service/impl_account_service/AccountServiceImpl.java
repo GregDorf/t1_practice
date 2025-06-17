@@ -6,6 +6,8 @@ import com.testprojgroup.logging.annotations.LogDataSourceError;
 import com.testprojgroup.logging.annotations.MetricTrack;
 import com.testprojgroup.t1_practice.model.Account;
 import com.testprojgroup.t1_practice.model.AccountStatusEnum;
+import com.testprojgroup.t1_practice.model.Client;
+import com.testprojgroup.t1_practice.model.ClientStatusEnum;
 import com.testprojgroup.t1_practice.repository.AccountRepository;
 import com.testprojgroup.t1_practice.repository.ClientRepository;
 import com.testprojgroup.t1_practice.service.AccountService;
@@ -64,12 +66,13 @@ public class AccountServiceImpl implements AccountService {
 
     public void blockAccountAndClient(UUID accountId, UUID clientId) {
         Account account = accountRepository.findByAccountId(accountId).orElseThrow();
-        //Client client = clientRepository.findByClientId(clientId).orElseThrow();
+        Client client = clientRepository.findByClientId(clientId).orElseThrow();
 
         account.setStatus(AccountStatusEnum.BLOCKED);
+        client.setStatus(ClientStatusEnum.BLOCKED);
 
         accountRepository.save(account);
-        //clientRepository.save(client);
+        clientRepository.save(client);
     }
 
     public void updateAccountStatus(UUID accountId, AccountStatusEnum newStatus) {
