@@ -1,8 +1,8 @@
 package com.testprojgroup.t1_practice.service.impl_transaction_service;
 
-import com.testprojgroup.t1_practice.aop.annotation.Cached;
-import com.testprojgroup.t1_practice.aop.annotation.LogDataSourceError;
-import com.testprojgroup.t1_practice.aop.annotation.MetricTrack;
+import com.testprojgroup.logging.annotations.Cached;
+import com.testprojgroup.logging.annotations.LogDataSourceError;
+import com.testprojgroup.logging.annotations.MetricTrack;
 import com.testprojgroup.t1_practice.model.Account;
 import com.testprojgroup.t1_practice.model.Transaction;
 import com.testprojgroup.t1_practice.model.TransactionStatusEnum;
@@ -61,9 +61,10 @@ public class TransactionServiceImpl implements TransactionService {
 
     public Transaction createRejectedTransaction(UUID accountId, BigDecimal amount) {
         Transaction tx = new Transaction();
-        Account account = accountService.findByAccountId(accountId);
+        Account accountInstance = accountService.findByAccountId(accountId);
+
         tx.setTransactionId(UUID.randomUUID());
-        tx.setAccount(accountService.findByAccountId(accountId));
+        tx.setAccount(accountInstance);
         tx.setAmount(amount);
         tx.setStatus(TransactionStatusEnum.REJECTED);
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 09/06/2025">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/config/MonitorProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/config/MonitorProperties.java" afterDir="false" />
+    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 11/06/2025">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +42,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="XML Properties File" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="XML Properties File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="practice_4-09.06.2025" />
+        <entry key="$PROJECT_DIR$" value="practice_7-16.06.2025" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -108,48 +109,142 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build transaction-monitor.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.T1PracticeApplication.executor": "Run",
-    "Spring Boot.TransactionMonitorApplication (1).executor": "Coverage",
-    "Spring Boot.TransactionMonitorApplication.executor": "Run",
-    "git-widget-placeholder": "practice__5-09.06.2025",
-    "last_opened_file_path": "C:/Users/ZERRASH/Desktop/t1_practice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build transaction-monitor.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientStatusServiceImplIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientStatusServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.T1PracticeApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionProcessingServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionResultProcessingServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UnblockingServiceImplIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UnblockingServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;Database connection parameters found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.T1PracticeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TransactionMonitorApplication (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Spring Boot.TransactionMonitorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;practice__8-18.06.2025&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZERRASH/Desktop/t1_practice/logging-starter/src/main/java/com/testprojgroup/logging/cache&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\cache" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\repository" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\model" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\kafka" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\config" />
+      <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\aspects" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.testprojgroup.transactionmonitor" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ClientStatusServiceImplIntegrationTest">
+    <configuration name="ClientStatusServiceImplIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_client_status_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_client_status_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_client_status_service.ClientStatusServiceImplIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionResultProcessingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_transaction_result_processing_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_result_processing_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_result_processing_service.TransactionResultProcessingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_transaction_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_service.TransactionServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnblockingServiceImplIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.UnblockingServiceImplIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnblockingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.UnblockingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="T1PracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="t1_practice" />
@@ -158,6 +253,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ClientStatusServiceImplIntegrationTest" />
+      <item itemvalue="JUnit.TransactionResultProcessingServiceImplTest" />
+      <item itemvalue="JUnit.TransactionServiceImplTest" />
+      <item itemvalue="JUnit.UnblockingServiceImplIntegrationTest" />
+      <item itemvalue="JUnit.UnblockingServiceImplTest" />
+      <item itemvalue="Spring Boot.T1PracticeApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClientStatusServiceImplIntegrationTest" />
+        <item itemvalue="JUnit.UnblockingServiceImplIntegrationTest" />
+        <item itemvalue="JUnit.TransactionServiceImplTest" />
+        <item itemvalue="JUnit.UnblockingServiceImplTest" />
+        <item itemvalue="JUnit.TransactionResultProcessingServiceImplTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -191,6 +303,16 @@
       <workItem from="1749220478905" duration="42724000" />
       <workItem from="1749810885773" duration="5517000" />
       <workItem from="1749816424565" duration="2383000" />
+      <workItem from="1749985356646" duration="1362000" />
+      <workItem from="1750017659444" duration="8332000" />
+      <workItem from="1750077444552" duration="1512000" />
+      <workItem from="1750187844474" duration="76000" />
+      <workItem from="1750242001921" duration="715000" />
+      <workItem from="1750243223417" duration="527000" />
+      <workItem from="1750243767940" duration="70000" />
+      <workItem from="1750243846675" duration="121000" />
+      <workItem from="1750244045561" duration="12500000" />
+      <workItem from="1750258835874" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
@@ -264,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749818696502</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="completed task for 11/06/2025">
+      <option name="closed" value="true" />
+      <created>1750079682679</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750079682679</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +411,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="practice_3-02.06.2025" />
+                        <option value="practice_7-16.06.2025" />
                       </list>
                     </value>
                   </entry>
@@ -301,7 +431,8 @@
     <MESSAGE value="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction" />
     <MESSAGE value="the project structure has been corrected and missing files from the previous commit have been added" />
     <MESSAGE value="completed task for 09/06/2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed task for 09/06/2025" />
+    <MESSAGE value="completed task for 11/06/2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed task for 11/06/2025" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/t1_practice$TransactionMonitorApplication__1_.ic" NAME="TransactionMonitorApplication (1) Coverage Results" MODIFIED="1749817226214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

@@ -1,25 +1,25 @@
 delete from clients;
 
-insert into clients (id, first_name, last_name, middle_name, client_id) values (1, 'Sky', 'Dayly', 'Scapens', '86afa4a6-cb65-55fb-8837-5cbb65a50590');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (2, 'Rachele', 'Dunnion', 'Trude', 'ebebccef-8f1e-fbe5-1bd2-0cf891fdfff6');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (3, 'Alair', 'Millmoe', 'Larrie', '32cafb6d-5a8d-e40a-a2dd-b44ad4fb276f');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (4, 'Florri', 'Mathy', 'Tiery', 'f403cdd7-fec5-2aca-baa7-1cf9e7acd880');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (5, 'Addison', 'Schaffel', 'Venturoli', '3cbbc809-0cfb-ccbb-eecd-15b131646c3e');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (6, 'Diego', 'Grabb', 'Mabbot', '2c3d334e-dbba-57c0-bcea-9c2bd7b523ef');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (7, 'Tricia', 'Palluschek', 'Peedell', '88aadbe6-ef61-f6ac-7f6f-fab9def98708');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (8, 'Janella', 'McGiffin', 'Moulsdall', '835e6ccc-7ffd-5aa9-c2ae-0caeb6aa1dbc');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (9, 'Micki', 'Nolli', 'Chazier', '95001074-a296-f96c-a3d6-716708fa465b');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (10, 'Micaela', 'Barck', 'Tennison', 'c6aa309b-0dda-bba5-46ac-3dd5a21fea4e');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (11, 'Thurstan', 'Jervois', 'Hamments', '4e69af2b-d59a-1aee-a28f-9efebeadd760');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (12, 'Alwin', 'Hodgin', 'Bendell', '88096bbf-becb-fab3-17fe-6bc5a44de5eb');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (13, 'Margy', 'Strewthers', 'Gilleon', 'c8bef8dd-aa9d-7aa4-ebb4-daf4881b0dbd');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (14, 'Sallyann', 'Shallcrass', 'Matyugin', '9ad88f48-97d5-32ac-e0dd-3eed8f8cf4cc');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (15, 'Lanie', 'Winkett', 'Heckney', 'b3e86a4f-907d-ea1b-dae7-eadbd6add5b2');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (16, 'Bobine', 'Godson', 'Aburrow', 'c55deb3e-b7da-bfdf-41a2-a6edbe1448dc');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (17, 'Indira', 'McFater', 'McGaw', 'c73ddf44-e2b2-b80f-bd1f-6fcf37164c5a');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (18, 'Marigold', 'Byway', 'Maggill''Andreis', '2f3ef663-7260-0f8d-4dcf-aaceb4dfbdf0');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (19, 'Taylor', 'Fransson', 'Haggarth', '83c2947c-ec81-7e66-807c-cb2ffc7faa8d');
-insert into clients (id, first_name, last_name, middle_name, client_id) values (20, 'Lea', 'Bertolin', 'MacMillan', 'e2cd06d0-17cf-edfc-55f1-a2ee44a12cfd');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (1, 'Sky', 'Dayly', 'Scapens', '86afa4a6-cb65-55fb-8837-5cbb65a50590', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (2, 'Rachele', 'Dunnion', 'Trude', 'ebebccef-8f1e-fbe5-1bd2-0cf891fdfff6', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (3, 'Alair', 'Millmoe', 'Larrie', '32cafb6d-5a8d-e40a-a2dd-b44ad4fb276f', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (4, 'Florri', 'Mathy', 'Tiery', 'f403cdd7-fec5-2aca-baa7-1cf9e7acd880', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (5, 'Addison', 'Schaffel', 'Venturoli', '3cbbc809-0cfb-ccbb-eecd-15b131646c3e', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (6, 'Diego', 'Grabb', 'Mabbot', '2c3d334e-dbba-57c0-bcea-9c2bd7b523ef', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (7, 'Tricia', 'Palluschek', 'Peedell', '88aadbe6-ef61-f6ac-7f6f-fab9def98708', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (8, 'Janella', 'McGiffin', 'Moulsdall', '835e6ccc-7ffd-5aa9-c2ae-0caeb6aa1dbc', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (9, 'Micki', 'Nolli', 'Chazier', '95001074-a296-f96c-a3d6-716708fa465b', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (10, 'Micaela', 'Barck', 'Tennison', 'c6aa309b-0dda-bba5-46ac-3dd5a21fea4e', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (11, 'Thurstan', 'Jervois', 'Hamments', '4e69af2b-d59a-1aee-a28f-9efebeadd760', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (12, 'Alwin', 'Hodgin', 'Bendell', '88096bbf-becb-fab3-17fe-6bc5a44de5eb', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (13, 'Margy', 'Strewthers', 'Gilleon', 'c8bef8dd-aa9d-7aa4-ebb4-daf4881b0dbd', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (14, 'Sallyann', 'Shallcrass', 'Matyugin', '9ad88f48-97d5-32ac-e0dd-3eed8f8cf4cc', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (15, 'Lanie', 'Winkett', 'Heckney', 'b3e86a4f-907d-ea1b-dae7-eadbd6add5b2', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (16, 'Bobine', 'Godson', 'Aburrow', 'c55deb3e-b7da-bfdf-41a2-a6edbe1448dc', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (17, 'Indira', 'McFater', 'McGaw', 'c73ddf44-e2b2-b80f-bd1f-6fcf37164c5a', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (18, 'Marigold', 'Byway', 'Maggill''Andreis', '2f3ef663-7260-0f8d-4dcf-aaceb4dfbdf0', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (19, 'Taylor', 'Fransson', 'Haggarth', '83c2947c-ec81-7e66-807c-cb2ffc7faa8d', 'UNBLOCKED');
+insert into clients (id, first_name, last_name, middle_name, client_id, status) values (20, 'Lea', 'Bertolin', 'MacMillan', 'e2cd06d0-17cf-edfc-55f1-a2ee44a12cfd', 'UNBLOCKED');
 
 delete from accounts;
 

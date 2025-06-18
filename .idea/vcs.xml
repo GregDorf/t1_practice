@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/banned-monitor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/logging-starter" vcs="Git" />
   </component>
 </project>

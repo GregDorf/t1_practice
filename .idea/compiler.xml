@@ -17,9 +17,6 @@
         <module name="t1_practice" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="transaction-monitor" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
