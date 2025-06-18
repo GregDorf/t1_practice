@@ -1,6 +1,6 @@
 package com.testprojgroup.t1_practice;
 
-import com.testprojgroup.t1_practice.aop.MetricProperties;
+import com.testprojgroup.t1_practice.config.MetricProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

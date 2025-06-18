@@ -1,4 +1,4 @@
-package com.testprojgroup.t1_practice.aop;
+package com.testprojgroup.t1_practice.config;
 
 import lombok.*;
 import org.springframework.boot.context.properties.ConfigurationProperties;

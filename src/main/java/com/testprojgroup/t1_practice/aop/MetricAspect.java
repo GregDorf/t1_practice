@@ -1,6 +1,7 @@
 package com.testprojgroup.t1_practice.aop;
 
-import com.testprojgroup.t1_practice.kafka.MetricKafkaProducer;
+import com.testprojgroup.t1_practice.config.MetricProperties;
+import com.testprojgroup.t1_practice.kafka.metric_producers.MetricKafkaProducer;
 import com.testprojgroup.t1_practice.model.TimeLimitExceedLog;
 import com.testprojgroup.t1_practice.repository.TimeLimitExceedLogRepository;
 import lombok.RequiredArgsConstructor;

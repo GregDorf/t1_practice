@@ -11,7 +11,9 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @Primary
@@ -44,5 +46,15 @@ public class AccountServiceImpl implements AccountService {
     @Transactional
     public void deleteAccount(Long id) {
         accountRepository.deleteAccountById(id);
+    }
+
+    public Account findByAccountId(UUID accountId) {
+        return accountRepository.findByAccountId(accountId)
+                .orElseThrow(() -> new RuntimeException("Account not found"));
+    }
+
+    public void adjustBalance(Account account, BigDecimal delta) {
+        account.setBalance(account.getBalance() + delta.doubleValue());
+        accountRepository.save(account);
     }
 }
