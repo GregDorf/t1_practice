@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/TransactionProcessingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/TransactionMonitorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/TransactionMonitorApplication.java" afterDir="false" />
+    <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 09/06/2025">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/TransactionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/config/MonitorProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-monitor/src/main/java/com/testprojgroup/transactionmonitor/config/MonitorProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +45,14 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="XML Properties File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="practice_2-29.05.2024" />
+        <entry key="$PROJECT_DIR$" value="practice_4-09.06.2025" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,10 +86,10 @@
       </map>
     </option>
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -126,16 +122,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.T1PracticeApplication.executor": "Run",
+    "Spring Boot.TransactionMonitorApplication (1).executor": "Coverage",
     "Spring Boot.TransactionMonitorApplication.executor": "Run",
-    "git-widget-placeholder": "#5 on practice__4-07.06.2025",
+    "git-widget-placeholder": "practice__5-09.06.2025",
     "last_opened_file_path": "C:/Users/ZERRASH/Desktop/t1_practice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -152,18 +149,11 @@
       <recent name="com.testprojgroup.transactionmonitor" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.T1PracticeApplication">
+  <component name="RunManager">
     <configuration name="T1PracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="t1_practice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.testprojgroup.t1_practice.T1PracticeApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransactionMonitorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="transaction-monitor.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.testprojgroup.transactionmonitor.TransactionMonitorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,7 +189,8 @@
       <workItem from="1748849391812" duration="20146000" />
       <workItem from="1749204031555" duration="1809000" />
       <workItem from="1749220478905" duration="42724000" />
-      <workItem from="1749810885773" duration="2515000" />
+      <workItem from="1749810885773" duration="5517000" />
+      <workItem from="1749816424565" duration="2383000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
@@ -257,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749813128422</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="the project structure has been corrected and missing files from the previous commit have been added">
+      <option name="closed" value="true" />
+      <created>1749813463364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749813463364</updated>
+    </task>
+    <task id="LOCAL-00009" summary="completed task for 09/06/2025">
+      <option name="closed" value="true" />
+      <created>1749818696502</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749818696502</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +299,11 @@
     <MESSAGE value="added table data_source_error_log in schema.sql" />
     <MESSAGE value="added @Metric and @Cached aspects" />
     <MESSAGE value="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited @Metric and @LogDataSourceError aspects to use kafka. Added kafka producers for previously changed aspects. Also added nullable fields in models for Client, Account and Transaction" />
+    <MESSAGE value="the project structure has been corrected and missing files from the previous commit have been added" />
+    <MESSAGE value="completed task for 09/06/2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed task for 09/06/2025" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/t1_practice$TransactionMonitorApplication__1_.ic" NAME="TransactionMonitorApplication (1) Coverage Results" MODIFIED="1749817226214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

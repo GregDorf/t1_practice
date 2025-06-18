@@ -1,6 +1,7 @@
 package com.testprojgroup.t1_practice.service;
 
 import com.testprojgroup.t1_practice.model.Account;
+import com.testprojgroup.t1_practice.model.AccountStatusEnum;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -15,4 +16,9 @@ public interface AccountService {
     Account findByAccountId(UUID accountId);
 
     void adjustBalance(Account account, BigDecimal amount);
+
+    public void blockAccountAndClient(UUID accountId, UUID clientId);
+
+    void updateAccountStatus(UUID accountId, AccountStatusEnum newStatus);
+
 }

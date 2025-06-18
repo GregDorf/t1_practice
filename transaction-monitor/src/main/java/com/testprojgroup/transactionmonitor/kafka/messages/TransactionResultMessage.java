@@ -1,9 +1,8 @@
-package com.testprojgroup.transactionmonitor.model;
+package com.testprojgroup.transactionmonitor.kafka.messages;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 import java.util.UUID;
@@ -23,4 +22,3 @@ public class TransactionResultMessage {
         this.status = status;
     }
 }
-

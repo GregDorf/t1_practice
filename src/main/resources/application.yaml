@@ -41,3 +41,9 @@ metric:
 
 cache:
   ttl: 60000
+
+jwt:
+  secret: dbahwdbhf@HEBfbJKEfbEHB#Rfnsejfn3Hr#3
+
+transaction:
+  reject-threshold: 3

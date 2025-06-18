@@ -1,6 +1,6 @@
 package com.testprojgroup.transactionmonitor.kafka;
 
-import com.testprojgroup.transactionmonitor.model.TransactionAcceptMessage;
+import com.testprojgroup.transactionmonitor.kafka.messages.TransactionAcceptMessage;
 import com.testprojgroup.transactionmonitor.service.MonitorService;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class TransactionAcceptListener {
+public class TransactionAcceptConsumer {
 
     private final MonitorService monitorService;
 

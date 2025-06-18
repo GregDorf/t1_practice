@@ -7,6 +7,7 @@ import com.testprojgroup.t1_practice.model.Account;
 import com.testprojgroup.t1_practice.model.Transaction;
 import com.testprojgroup.t1_practice.model.TransactionStatusEnum;
 import com.testprojgroup.t1_practice.repository.TransactionRepository;
+import com.testprojgroup.t1_practice.service.AccountService;
 import com.testprojgroup.t1_practice.service.TransactionService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
@@ -21,6 +22,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class TransactionServiceImpl implements TransactionService {
     private final TransactionRepository transactionRepository;
+    private final AccountService accountService;
 
     @MetricTrack
     @Cached(cacheName="Transactions_List")
@@ -55,5 +57,30 @@ public class TransactionServiceImpl implements TransactionService {
         tx.setStatus(TransactionStatusEnum.REQUESTED);
         tx.setTransactionId(UUID.randomUUID());
         return transactionRepository.save(tx);
+    }
+
+    public Transaction createRejectedTransaction(UUID accountId, BigDecimal amount) {
+        Transaction tx = new Transaction();
+        Account account = accountService.findByAccountId(accountId);
+        tx.setTransactionId(UUID.randomUUID());
+        tx.setAccount(accountService.findByAccountId(accountId));
+        tx.setAmount(amount);
+        tx.setStatus(TransactionStatusEnum.REJECTED);
+
+        return transactionRepository.save(tx);
+    }
+
+    public Transaction createAcceptedTransaction(Account account, BigDecimal amount) {
+        Transaction tx = new Transaction();
+        tx.setTransactionId(UUID.randomUUID());
+        tx.setAccount(account);
+        tx.setAmount(amount);
+        tx.setStatus(TransactionStatusEnum.ACCEPTED);
+
+        return transactionRepository.save(tx);
+    }
+
+    public int countRejectedTransactionsByAccountId(Long accountId) {
+        return transactionRepository.countByAccountIdAndStatus(accountId, TransactionStatusEnum.REJECTED);
     }
 }
