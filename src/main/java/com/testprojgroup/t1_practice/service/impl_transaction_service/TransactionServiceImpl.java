@@ -61,9 +61,10 @@ public class TransactionServiceImpl implements TransactionService {
 
     public Transaction createRejectedTransaction(UUID accountId, BigDecimal amount) {
         Transaction tx = new Transaction();
-        Account account = accountService.findByAccountId(accountId);
+        Account accountInstance = accountService.findByAccountId(accountId);
+
         tx.setTransactionId(UUID.randomUUID());
-        tx.setAccount(accountService.findByAccountId(accountId));
+        tx.setAccount(accountInstance);
         tx.setAmount(amount);
         tx.setStatus(TransactionStatusEnum.REJECTED);
 

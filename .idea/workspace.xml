@@ -5,51 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 11/06/2025">
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/BannedMonitorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/controller/BannedAccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/controller/BannedClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/jwt_auth/JwtAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/model/UnblockAccountResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/model/UnblockClientResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/service/BannedAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/service/BannedClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/service/impl_banned_account_service/BannedAccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/java/com/testprojgroup/bannedmonitor/service/impl_banned_client_service/BannedClientServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banned-monitor/banned-monitor/src/test/java/com/testprojgroup/bannedmonitor/BannedMonitorApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/config/MetricConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/ClientStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/UnblockAccountResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/UnblockClientResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/scheduler/UnblockTasksScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/UnblockingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_client_status_service/ClientStatusServiceImplIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_client_status_service/ClientStatusServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_transaction_result_processing_service/TransactionResultProcessingServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/T1PracticeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Client$ClientBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Client$ClientBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/AccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testprojgroup/t1_practice/repository/AccountRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +66,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="practice_6-11.06.2025" />
+        <entry key="$PROJECT_DIR$" value="practice_7-16.06.2025" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -155,6 +127,15 @@
   "keyToString": {
     "Gradle.Build transaction-monitor.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "JUnit.AccountServiceImplTest.executor": "Run",
+    "JUnit.ClientStatusServiceImplIntegrationTest.executor": "Run",
+    "JUnit.ClientStatusServiceImplTest.executor": "Run",
+    "JUnit.T1PracticeApplicationTests.executor": "Run",
+    "JUnit.TransactionProcessingServiceImplTest.executor": "Run",
+    "JUnit.TransactionResultProcessingServiceImplTest.executor": "Run",
+    "JUnit.TransactionServiceImplTest.executor": "Run",
+    "JUnit.UnblockingServiceImplIntegrationTest.executor": "Run",
+    "JUnit.UnblockingServiceImplTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
     "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
@@ -167,7 +148,7 @@
     "Spring Boot.T1PracticeApplication.executor": "Run",
     "Spring Boot.TransactionMonitorApplication (1).executor": "Coverage",
     "Spring Boot.TransactionMonitorApplication.executor": "Run",
-    "git-widget-placeholder": "practice__7-16.06.2025",
+    "git-widget-placeholder": "practice__8-18.06.2025",
     "last_opened_file_path": "C:/Users/ZERRASH/Desktop/t1_practice/logging-starter/src/main/java/com/testprojgroup/logging/cache",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -202,7 +183,82 @@
       <recent name="com.testprojgroup.transactionmonitor" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ClientStatusServiceImplIntegrationTest">
+    <configuration name="ClientStatusServiceImplIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_client_status_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_client_status_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_client_status_service.ClientStatusServiceImplIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionResultProcessingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_transaction_result_processing_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_result_processing_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_result_processing_service.TransactionResultProcessingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_transaction_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_transaction_service.TransactionServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnblockingServiceImplIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.UnblockingServiceImplIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnblockingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="t1_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service" />
+      <option name="MAIN_CLASS_NAME" value="com.testprojgroup.t1_practice.service.impl_unblocking_service.UnblockingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="T1PracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="t1_practice" />
@@ -211,6 +267,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ClientStatusServiceImplIntegrationTest" />
+      <item itemvalue="JUnit.TransactionResultProcessingServiceImplTest" />
+      <item itemvalue="JUnit.TransactionServiceImplTest" />
+      <item itemvalue="JUnit.UnblockingServiceImplIntegrationTest" />
+      <item itemvalue="JUnit.UnblockingServiceImplTest" />
+      <item itemvalue="Spring Boot.T1PracticeApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClientStatusServiceImplIntegrationTest" />
+        <item itemvalue="JUnit.UnblockingServiceImplIntegrationTest" />
+        <item itemvalue="JUnit.TransactionServiceImplTest" />
+        <item itemvalue="JUnit.UnblockingServiceImplTest" />
+        <item itemvalue="JUnit.TransactionResultProcessingServiceImplTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -247,6 +320,12 @@
       <workItem from="1749985356646" duration="1362000" />
       <workItem from="1750017659444" duration="8332000" />
       <workItem from="1750077444552" duration="1512000" />
+      <workItem from="1750187844474" duration="76000" />
+      <workItem from="1750242001921" duration="715000" />
+      <workItem from="1750243223417" duration="527000" />
+      <workItem from="1750243767940" duration="70000" />
+      <workItem from="1750243846675" duration="121000" />
+      <workItem from="1750244045561" duration="12500000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
@@ -345,7 +424,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="practice_3-02.06.2025" />
+                        <option value="practice_7-16.06.2025" />
                       </list>
                     </value>
                   </entry>
