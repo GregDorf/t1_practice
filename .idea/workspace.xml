@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e9bbfa-426b-4828-962e-5ef900a5e68b" name="Changes" comment="completed task for 11/06/2025">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_account_service/AccountServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_client_status_service/ClientStatusServiceImplIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_client_status_service/ClientStatusServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_transaction_processing_service/TransactionProcessingServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_transaction_result_processing_service/TransactionResultProcessingServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2b4e81-8f31-4468-85f4-e33eee38df3d/storage_v2/_src_/database/t1_practice._VhO6w/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprojgroup/t1_practice/service/impl_transaction_service/TransactionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testprojgroup/t1_practice/service/impl_unblocking_service/UnblockingServiceImplIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,51 +109,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build transaction-monitor.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "JUnit.AccountServiceImplTest.executor": "Run",
-    "JUnit.ClientStatusServiceImplIntegrationTest.executor": "Run",
-    "JUnit.ClientStatusServiceImplTest.executor": "Run",
-    "JUnit.T1PracticeApplicationTests.executor": "Run",
-    "JUnit.TransactionProcessingServiceImplTest.executor": "Run",
-    "JUnit.TransactionResultProcessingServiceImplTest.executor": "Run",
-    "JUnit.TransactionServiceImplTest.executor": "Run",
-    "JUnit.UnblockingServiceImplIntegrationTest.executor": "Run",
-    "JUnit.UnblockingServiceImplTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.T1PracticeApplication.executor": "Run",
-    "Spring Boot.TransactionMonitorApplication (1).executor": "Coverage",
-    "Spring Boot.TransactionMonitorApplication.executor": "Run",
-    "git-widget-placeholder": "practice__8-18.06.2025",
-    "last_opened_file_path": "C:/Users/ZERRASH/Desktop/t1_practice/logging-starter/src/main/java/com/testprojgroup/logging/cache",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build transaction-monitor.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientStatusServiceImplIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientStatusServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.T1PracticeApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionProcessingServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionResultProcessingServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UnblockingServiceImplIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UnblockingServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;Database connection parameters found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.T1PracticeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TransactionMonitorApplication (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Spring Boot.TransactionMonitorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;practice__8-18.06.2025&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZERRASH/Desktop/t1_practice/logging-starter/src/main/java/com/testprojgroup/logging/cache&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ZERRASH\Desktop\t1_practice\logging-starter\src\main\java\com\testprojgroup\logging\cache" />
@@ -326,6 +312,7 @@
       <workItem from="1750243767940" duration="70000" />
       <workItem from="1750243846675" duration="121000" />
       <workItem from="1750244045561" duration="12500000" />
+      <workItem from="1750258835874" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />

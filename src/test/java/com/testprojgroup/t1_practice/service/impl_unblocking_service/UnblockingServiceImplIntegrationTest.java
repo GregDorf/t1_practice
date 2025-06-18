@@ -29,7 +29,7 @@ class UnblockingServiceImplIntegrationTest {
     JwtUtil mockJwtUtil;
 
     private final String MOCK_JWT_TOKEN = "integration-unblock-jwt-token";
-    private String unblockClientUsernameJwt; // Имя пользователя из сервиса
+    private String unblockClientUsernameJwt;
 
     @BeforeAll
     static void startWireMockServer() {
@@ -50,22 +50,16 @@ class UnblockingServiceImplIntegrationTest {
     @BeforeEach
     void setUp() {
         WireMock.reset();
-        // Получаем имя пользователя, которое используется в сервисе для генерации токена
-        // Это можно сделать, если константа в сервисе public static final,
-        // или если оно не меняется, просто продублировать значение.
-        // Предположим, оно не меняется:
         unblockClientUsernameJwt = "t1_practice-unblock-task";
         Mockito.when(mockJwtUtil.generateToken(unblockClientUsernameJwt)).thenReturn(MOCK_JWT_TOKEN);
 
         unblockingService = new UnblockingServiceImpl(new RestTemplate(), mockJwtUtil);
-        // Устанавливаем базовый URL, чтобы он указывал на наш WireMock
         ReflectionTestUtils.setField(unblockingService, "bannedMonitorBaseUrl", "http://localhost:" + wireMockServer.port());
     }
 
     @Test
     @DisplayName("requestClientUnblock - success from WireMock")
     void requestClientUnblock_success() {
-        // Arrange
         UUID clientId = UUID.randomUUID();
         String expectedWireMockResponseJson = String.format(
                 "{\"clientId\":\"%s\",\"allowUnblocking\":true}", clientId
@@ -78,10 +72,8 @@ class UnblockingServiceImplIntegrationTest {
                         .withHeader("Content-Type", "application/json")
                         .withBody(expectedWireMockResponseJson)));
 
-        // Act
         UnblockClientResponse actualResponse = unblockingService.requestClientUnblock(clientId);
 
-        // Assert
         assertNotNull(actualResponse);
         assertTrue(actualResponse.isAllowUnblocking());
         assertEquals(clientId, actualResponse.getClientId());
@@ -93,18 +85,14 @@ class UnblockingServiceImplIntegrationTest {
     @Test
     @DisplayName("requestClientUnblock - WireMock returns 403 Forbidden, service returns deny")
     void requestClientUnblock_wiremockReturns403() {
-        // Arrange
         UUID clientId = UUID.randomUUID();
 
         stubFor(post(urlEqualTo("/api/unlock/clients/" + clientId.toString()))
                 .willReturn(aResponse()
-                        .withStatus(403) // Симулируем ошибку авторизации/доступа
+                        .withStatus(403)
                         .withBody("{\"error\":\"Forbidden by WireMock\"}")));
-        // Act
         UnblockClientResponse actualResponse = unblockingService.requestClientUnblock(clientId);
 
-        // Assert
-        // Сервис должен обработать HttpClientErrorException и вернуть ответ с allowUnblocking = false
         assertNotNull(actualResponse);
         assertFalse(actualResponse.isAllowUnblocking());
         assertEquals(clientId, actualResponse.getClientId());
@@ -115,7 +103,6 @@ class UnblockingServiceImplIntegrationTest {
     @Test
     @DisplayName("requestAccountArrestRelease - success from WireMock")
     void requestAccountArrestRelease_success() {
-        // Arrange
         UUID accountId = UUID.randomUUID();
         String expectedWireMockResponseJson = String.format(
                 "{\"accountId\":\"%s\",\"allowUnblocking\":true}", accountId
@@ -127,10 +114,8 @@ class UnblockingServiceImplIntegrationTest {
                         .withStatus(200)
                         .withHeader("Content-Type", "application/json")
                         .withBody(expectedWireMockResponseJson)));
-        // Act
         UnblockAccountResponse actualResponse = unblockingService.requestAccountArrestRelease(accountId);
 
-        // Assert
         assertNotNull(actualResponse);
         assertTrue(actualResponse.isAllowUnblocking());
         assertEquals(accountId, actualResponse.getAccountId());
@@ -142,17 +127,14 @@ class UnblockingServiceImplIntegrationTest {
     @Test
     @DisplayName("requestAccountArrestRelease - WireMock returns 500, service returns deny")
     void requestAccountArrestRelease_wiremockReturns500() {
-        // Arrange
         UUID accountId = UUID.randomUUID();
 
         stubFor(post(urlEqualTo("/api/unlock/accounts/" + accountId.toString()))
                 .willReturn(aResponse()
                         .withStatus(500)
                         .withBody("{\"error\":\"Server error on WireMock\"}")));
-        // Act
         UnblockAccountResponse actualResponse = unblockingService.requestAccountArrestRelease(accountId);
 
-        // Assert
         assertNotNull(actualResponse);
         assertFalse(actualResponse.isAllowUnblocking());
         assertEquals(accountId, actualResponse.getAccountId());
