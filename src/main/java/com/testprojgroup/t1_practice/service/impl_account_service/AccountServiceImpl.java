@@ -1,8 +1,9 @@
 package com.testprojgroup.t1_practice.service.impl_account_service;
 
-import com.testprojgroup.t1_practice.aop.annotation.Cached;
-import com.testprojgroup.t1_practice.aop.annotation.LogDataSourceError;
-import com.testprojgroup.t1_practice.aop.annotation.MetricTrack;
+
+import com.testprojgroup.logging.annotations.Cached;
+import com.testprojgroup.logging.annotations.LogDataSourceError;
+import com.testprojgroup.logging.annotations.MetricTrack;
 import com.testprojgroup.t1_practice.model.Account;
 import com.testprojgroup.t1_practice.model.AccountStatusEnum;
 import com.testprojgroup.t1_practice.repository.AccountRepository;
