@@ -5,7 +5,8 @@ CREATE TABLE IF NOT EXISTS clients (
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     middle_name VARCHAR(255),
-    client_id UUID NOT NULL UNIQUE DEFAULT gen_random_uuid()
+    client_id UUID NOT NULL UNIQUE DEFAULT gen_random_uuid(),
+    status VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS accounts (
